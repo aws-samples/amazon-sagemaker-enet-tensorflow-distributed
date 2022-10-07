@@ -1,0 +1,21 @@
+[project]
+name = "amazon-sagemaker-enet-tensorflow-distributed"
+version = "0.1.0"
+description = "ENet Model with Distributed Training on Amazon SageMaker"
+authors = [
+    {name = "Johann Fuechsl", email = "fuechslj@amazon.at"},
+]
+dependencies = [
+    "numpy>=1.19.5",
+    "sagemaker[local]>=2.88.1",
+    "tensorflow==2.8.0",
+    "Pillow>=9.1.0",
+]
+requires-python = ">=3.9,<3.11"
+license = {text = "MIT-0"}
+
+[tool.pdm]
+
+[build-system]
+requires = ["pdm-pep517>=0.12.0"]
+build-backend = "pdm.pep517.api"
